@@ -2,20 +2,17 @@
 
 个人 macOS 应用的 Homebrew 安装源。
 
-## 状态
+## OneClick
 
-仓库已准备好，目前尚未收录 Cask。[OneClick](https://github.com/JasonG98/OneClick) 首个正式版本发布后加入。
-
-## 安装源
+在 Finder 右键菜单中打开文件夹、复制路径。需要 Apple Silicon 和 macOS 26+。
 
 ```sh
-brew tap JasonG98/tap
+brew install --cask JasonG98/tap/oneclick
 ```
 
-## 更新 OneClick
+应用未经 Apple 公证，首次安装请阅读终端提示与 [OneClick 安装说明](https://github.com/JasonG98/OneClick#安装与使用)。
 
-1. 在 OneClick 仓库公开 Release，确保 DMG 附件可下载。
-2. 将该 Release 配套的 `oneclick.rb` 放入本仓库的 `Casks/`，核对版本、下载地址和 SHA-256 后提交。
+## 更新
 
-Cask 上线后可使用 `brew install --cask JasonG98/tap/oneclick`。
-本仓库仅存放安装描述，不重复构建应用，无额外 CI。
+公开 OneClick Release 后，将该版本附件中的 `oneclick.rb` 更新到 `Casks/`，核对下载地址和 SHA-256 后提交。
+本仓库只维护安装描述，无额外构建或 CI。
